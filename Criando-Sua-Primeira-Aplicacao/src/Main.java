@@ -18,5 +18,11 @@ public class Main {
 
         sinopse = "Filme de aventura com galã dos anos 80 ";
         System.out.println(sinopse);
+
+        int classificacao;
+
+        classificacao = (int) (media/2);
+
+        System.out.println(classificacao);
     }
 }
