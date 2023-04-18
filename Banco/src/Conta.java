@@ -16,4 +16,10 @@ public class Conta {
     public void Sacar(Double Valor) {
         this.Saldo -= Valor;
     }
+
+    public static Conta NovaConta(){
+        Conta conta = new Conta();
+
+        return conta;
+    }
 }
