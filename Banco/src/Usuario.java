@@ -5,6 +5,7 @@ public class Usuario {
     private String email;
     private String CPF;
     private String Endereco;
+    private Conta conta;
 
     public static Usuario CadastrarUsuario(){
         Scanner Leitor = new Scanner(System.in);
@@ -18,25 +19,25 @@ public class Usuario {
 
         System.out.println("Diga seu CPF:");
         usuario.setCPF(Leitor.nextLine());
-
+ 
         System.out.println("Digite seu endereço");
         usuario.setEndereco(Leitor.nextLine());
+
+        System.out.println("Cadastro realizado com sucesso !");
 
         return usuario;
     }
 
     public Conta getConta() {
-        return conta;
+        return this.conta;
     }
 
     public void setConta(Conta conta) {
         this.conta = conta;
     }
 
-    private Conta conta;
-
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -44,7 +45,7 @@ public class Usuario {
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
@@ -52,7 +53,7 @@ public class Usuario {
     }
 
     public String getCPF() {
-        return CPF;
+        return this.CPF;
     }
 
     public void setCPF(String CPF) {
@@ -60,11 +61,11 @@ public class Usuario {
     }
 
     public String getEndereco() {
-        return Endereco;
+        return this.Endereco;
     }
 
     public void setEndereco(String endereco) {
-        Endereco = endereco;
+        this.Endereco = endereco;
     }
 
 }
